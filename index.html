@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulsoFit Academia — Wireframe de média fidelidade</title>
+  <meta name="description" content="Wireframe de média fidelidade de uma One Page para a academia PulsoFit. Desafio DIO de UX/UI.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Barra do wireframe (não faz parte do produto) -->
+  <div class="wf-barra" role="region" aria-label="Controles do wireframe">
+    <span><strong>Wireframe</strong> · média fidelidade · PulsoFit Academia</span>
+    <button type="button" id="btn-anotacoes" class="wf-toggle" aria-pressed="false">Mostrar anotações de UX</button>
+  </div>
+
+  <!-- 1. CABEÇALHO -->
+  <header class="cabecalho" data-nota="1">
+    <div class="container cabecalho__inner">
+      <a href="#inicio" class="logo" aria-label="PulsoFit — voltar ao início">
+        <span class="logo__marca" aria-hidden="true">◆</span> PulsoFit
+      </a>
+
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <a href="#modalidades">Modalidades</a>
+        <a href="#planos">Planos</a>
+        <a href="#horarios">Horários</a>
+        <a href="#unidade">Unidade</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+
+      <a href="#experimental" class="btn btn--primario btn--pequeno" data-nota="2">Aula grátis</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- 2. HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__texto">
+          <span class="etiqueta">Aberta das 5h às 23h · 7 dias por semana</span>
+          <h1 data-nota="3">Treine no seu ritmo, com acompanhamento de verdade.</h1>
+          <p class="hero__sub">
+            Musculação, funcional e aulas coletivas em um só lugar.
+            Professores no salão em todos os horários e avaliação física inclusa.
+          </p>
+
+          <div class="hero__acoes">
+            <a href="#experimental" class="btn btn--primario btn--grande" data-nota="2">Agendar aula experimental grátis</a>
+            <a href="#planos" class="btn btn--secundario btn--grande">Ver planos</a>
+          </div>
+
+          <ul class="prova-social" data-nota="4" aria-label="Números da academia">
+            <li><strong>+3.200</strong><span>alunos ativos</span></li>
+            <li><strong>4,9 ★</strong><span>no Google (870 avaliações)</span></li>
+            <li><strong>12 anos</strong><span>no bairro</span></li>
+          </ul>
+        </div>
+
+        <div class="placeholder placeholder--hero" role="img" aria-label="Imagem: aluna treinando com professor">
+          <span>Foto: aluna treinando com acompanhamento do professor</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BENEFÍCIOS -->
+    <section class="secao" aria-labelledby="titulo-beneficios">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-beneficios">Por que treinar na PulsoFit?</h2>
+          <p>Quatro motivos que fazem nossos alunos ficarem.</p>
+        </header>
+
+        <div class="grade grade--4" data-nota="5">
+          <article class="card">
+            <div class="icone" aria-hidden="true">◎</div>
+            <h3>Avaliação física inclusa</h3>
+            <p>Você começa com um diagnóstico e um treino feito para o seu objetivo.</p>
+          </article>
+          <article class="card">
+            <div class="icone" aria-hidden="true">◷</div>
+            <h3>Horário estendido</h3>
+            <p>Das 5h às 23h, inclusive fins de semana e feriados.</p>
+          </article>
+          <article class="card">
+            <div class="icone" aria-hidden="true">☺</div>
+            <h3>Professor sempre no salão</h3>
+            <p>Correção de postura e ajuste de carga em qualquer horário.</p>
+          </article>
+          <article class="card">
+            <div class="icone" aria-hidden="true">▣</div>
+            <h3>Treino no app</h3>
+            <p>Sua ficha, sua evolução e reserva de aulas direto no celular.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MODALIDADES -->
+    <section id="modalidades" class="secao secao--cinza" aria-labelledby="titulo-modalidades">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-modalidades">Modalidades</h2>
+          <p>Todas incluídas no plano Completo.</p>
+        </header>
+
+        <div class="grade grade--3" data-nota="6">
+          <article class="card card--imagem">
+            <div class="placeholder placeholder--card" role="img" aria-label="Imagem: área de musculação"><span>Foto: musculação</span></div>
+            <div class="card__corpo">
+              <h3>Musculação</h3>
+              <p>Mais de 120 equipamentos, área de peso livre e cardio.</p>
+              <span class="tag">Todos os níveis</span>
+            </div>
+          </article>
+          <article class="card card--imagem">
+            <div class="placeholder placeholder--card" role="img" aria-label="Imagem: aula de funcional"><span>Foto: funcional</span></div>
+            <div class="card__corpo">
+              <h3>Funcional</h3>
+              <p>Treinos em grupo de 45 minutos com foco em força e condicionamento.</p>
+              <span class="tag">Iniciante ao avançado</span>
+            </div>
+          </article>
+          <article class="card card--imagem">
+            <div class="placeholder placeholder--card" role="img" aria-label="Imagem: aula coletiva"><span>Foto: aulas coletivas</span></div>
+            <div class="card__corpo">
+              <h3>Aulas coletivas</h3>
+              <p>Spinning, dança, yoga e pilates solo ao longo da semana.</p>
+              <span class="tag">Reserva pelo app</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PLANOS -->
+    <section id="planos" class="secao" aria-labelledby="titulo-planos">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-planos">Escolha seu plano</h2>
+          <p>Sem taxa de matrícula. Cancele quando quiser no plano Mensal.</p>
+        </header>
+
+        <div class="grade grade--3 planos" data-nota="7">
+          <article class="plano">
+            <h3>Mensal</h3>
+            <p class="plano__desc">Para quem quer começar sem compromisso.</p>
+            <p class="plano__preco"><span class="moeda">R$</span>139<span class="periodo">/mês</span></p>
+            <ul class="lista-check">
+              <li>Musculação ilimitada</li>
+              <li>Avaliação física inicial</li>
+              <li>Treino no app</li>
+              <li class="nao">Aulas coletivas</li>
+              <li class="nao">Funcional</li>
+            </ul>
+            <a href="#experimental" class="btn btn--secundario btn--bloco">Quero o Mensal</a>
+          </article>
+
+          <article class="plano plano--destaque" data-nota="8">
+            <span class="plano__selo">Mais escolhido</span>
+            <h3>Completo</h3>
+            <p class="plano__desc">Acesso total por um preço menor por mês.</p>
+            <p class="plano__preco"><span class="moeda">R$</span>119<span class="periodo">/mês</span></p>
+            <p class="plano__obs">Fidelidade de 12 meses · economia de R$ 240/ano</p>
+            <ul class="lista-check">
+              <li>Musculação ilimitada</li>
+              <li>Avaliação física a cada 3 meses</li>
+              <li>Treino no app</li>
+              <li>Aulas coletivas</li>
+              <li>Funcional</li>
+            </ul>
+            <a href="#experimental" class="btn btn--primario btn--bloco">Quero o Completo</a>
+          </article>
+
+          <article class="plano">
+            <h3>Duo</h3>
+            <p class="plano__desc">Para treinar junto com alguém.</p>
+            <p class="plano__preco"><span class="moeda">R$</span>209<span class="periodo">/mês</span></p>
+            <p class="plano__obs">Para 2 pessoas · fidelidade de 12 meses</p>
+            <ul class="lista-check">
+              <li>Tudo do plano Completo</li>
+              <li>2 acessos no mesmo plano</li>
+              <li>1 sessão de personal por mês</li>
+            </ul>
+            <a href="#experimental" class="btn btn--secundario btn--bloco">Quero o Duo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. HORÁRIOS -->
+    <section id="horarios" class="secao secao--cinza" aria-labelledby="titulo-horarios">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-horarios">Horários das aulas coletivas</h2>
+          <p>Escolha o dia para ver a grade. A musculação funciona das 5h às 23h.</p>
+        </header>
+
+        <div class="abas" data-nota="9">
+          <div class="abas__lista" role="tablist" aria-label="Dias da semana">
+            <button type="button" role="tab" aria-selected="true"  aria-controls="dia-seg" id="aba-seg">Seg</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="dia-ter" id="aba-ter" tabindex="-1">Ter</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="dia-qua" id="aba-qua" tabindex="-1">Qua</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="dia-qui" id="aba-qui" tabindex="-1">Qui</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="dia-sex" id="aba-sex" tabindex="-1">Sex</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="dia-sab" id="aba-sab" tabindex="-1">Sáb</button>
+          </div>
+
+          <div class="abas__painel" role="tabpanel" id="dia-seg" aria-labelledby="aba-seg">
+            <table class="tabela">
+              <thead><tr><th scope="col">Horário</th><th scope="col">Aula</th><th scope="col">Duração</th><th scope="col">Vagas</th></tr></thead>
+              <tbody>
+                <tr><td>06:30</td><td>Funcional</td><td>45 min</td><td>8 de 20</td></tr>
+                <tr><td>08:00</td><td>Yoga</td><td>60 min</td><td>Lotada</td></tr>
+                <tr><td>12:15</td><td>Spinning</td><td>40 min</td><td>5 de 25</td></tr>
+                <tr><td>18:30</td><td>Funcional</td><td>45 min</td><td>2 de 20</td></tr>
+                <tr><td>19:30</td><td>Dança</td><td>50 min</td><td>12 de 30</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="abas__painel" role="tabpanel" id="dia-ter" aria-labelledby="aba-ter" hidden>
+            <table class="tabela">
+              <thead><tr><th scope="col">Horário</th><th scope="col">Aula</th><th scope="col">Duração</th><th scope="col">Vagas</th></tr></thead>
+              <tbody>
+                <tr><td>07:00</td><td>Pilates solo</td><td>50 min</td><td>6 de 15</td></tr>
+                <tr><td>12:15</td><td>Funcional</td><td>45 min</td><td>10 de 20</td></tr>
+                <tr><td>19:00</td><td>Spinning</td><td>40 min</td><td>3 de 25</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="abas__painel" role="tabpanel" id="dia-qua" aria-labelledby="aba-qua" hidden>
+            <table class="tabela">
+              <thead><tr><th scope="col">Horário</th><th scope="col">Aula</th><th scope="col">Duração</th><th scope="col">Vagas</th></tr></thead>
+              <tbody>
+                <tr><td>06:30</td><td>Funcional</td><td>45 min</td><td>11 de 20</td></tr>
+                <tr><td>18:30</td><td>Yoga</td><td>60 min</td><td>7 de 15</td></tr>
+                <tr><td>19:30</td><td>Dança</td><td>50 min</td><td>15 de 30</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="abas__painel" role="tabpanel" id="dia-qui" aria-labelledby="aba-qui" hidden>
+            <table class="tabela">
+              <thead><tr><th scope="col">Horário</th><th scope="col">Aula</th><th scope="col">Duração</th><th scope="col">Vagas</th></tr></thead>
+              <tbody>
+                <tr><td>07:00</td><td>Pilates solo</td><td>50 min</td><td>4 de 15</td></tr>
+                <tr><td>12:15</td><td>Spinning</td><td>40 min</td><td>9 de 25</td></tr>
+                <tr><td>18:30</td><td>Funcional</td><td>45 min</td><td>Lotada</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="abas__painel" role="tabpanel" id="dia-sex" aria-labelledby="aba-sex" hidden>
+            <table class="tabela">
+              <thead><tr><th scope="col">Horário</th><th scope="col">Aula</th><th scope="col">Duração</th><th scope="col">Vagas</th></tr></thead>
+              <tbody>
+                <tr><td>06:30</td><td>Funcional</td><td>45 min</td><td>13 de 20</td></tr>
+                <tr><td>18:00</td><td>Spinning</td><td>40 min</td><td>8 de 25</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="abas__painel" role="tabpanel" id="dia-sab" aria-labelledby="aba-sab" hidden>
+            <table class="tabela">
+              <thead><tr><th scope="col">Horário</th><th scope="col">Aula</th><th scope="col">Duração</th><th scope="col">Vagas</th></tr></thead>
+              <tbody>
+                <tr><td>09:00</td><td>Funcional ao ar livre</td><td>60 min</td><td>18 de 30</td></tr>
+                <tr><td>10:30</td><td>Yoga</td><td>60 min</td><td>9 de 15</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DEPOIMENTOS -->
+    <section class="secao" aria-labelledby="titulo-depoimentos">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-depoimentos">Quem treina, recomenda</h2>
+          <p>Avaliações reais de alunos no Google.</p>
+        </header>
+
+        <div class="grade grade--3" data-nota="4">
+          <figure class="depoimento">
+            <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Nunca tinha conseguido manter uma rotina. Aqui o professor lembra do meu treino e me corrige. Perdi 9 kg em 6 meses.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true"></span><span><strong>Mariana S.</strong><br>Aluna há 1 ano</span></figcaption>
+          </figure>
+          <figure class="depoimento">
+            <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Treino às 5h antes do trabalho e a academia já está limpa e com professor no salão. Faz toda diferença.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true"></span><span><strong>Rafael T.</strong><br>Aluno há 3 anos</span></figcaption>
+          </figure>
+          <figure class="depoimento">
+            <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Faço o plano Duo com meu marido. Reservar as aulas pelo app é muito simples.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true"></span><span><strong>Juliana P.</strong><br>Aluna há 8 meses</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. AULA EXPERIMENTAL (FORMULÁRIO) -->
+    <section id="experimental" class="secao secao--escura" aria-labelledby="titulo-experimental">
+      <div class="container experimental">
+        <div class="experimental__texto">
+          <h2 id="titulo-experimental">Faça uma aula experimental grátis</h2>
+          <p>Conheça a estrutura, treine com um professor e tire suas dúvidas. Sem compromisso e sem cartão de crédito.</p>
+          <ol class="passos" data-nota="10">
+            <li><strong>Preencha</strong> nome, WhatsApp e o melhor período.</li>
+            <li><strong>Receba</strong> a confirmação no WhatsApp em até 1 hora.</li>
+            <li><strong>Venha treinar</strong> com roupa confortável e uma garrafinha.</li>
+          </ol>
+        </div>
+
+        <form class="formulario" id="form-experimental" novalidate data-nota="11">
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Ana Souza" required aria-describedby="erro-nome">
+            <span class="campo__erro" id="erro-nome" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="whatsapp">WhatsApp</label>
+            <input id="whatsapp" name="whatsapp" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(11) 90000-0000" required aria-describedby="ajuda-whatsapp erro-whatsapp">
+            <span class="campo__ajuda" id="ajuda-whatsapp">Usamos apenas para confirmar sua aula.</span>
+            <span class="campo__erro" id="erro-whatsapp" aria-live="polite"></span>
+          </div>
+
+          <fieldset class="campo">
+            <legend>Melhor período</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="periodo" value="manha" checked> Manhã</label>
+              <label class="opcao"><input type="radio" name="periodo" value="tarde"> Tarde</label>
+              <label class="opcao"><input type="radio" name="periodo" value="noite"> Noite</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn--primario btn--bloco btn--grande">Quero minha aula grátis</button>
+          <p class="formulario__nota">🔒 Seus dados não serão compartilhados.</p>
+
+          <div class="formulario__sucesso" id="sucesso" role="status" hidden>
+            <strong>Pronto! Pedido recebido.</strong>
+            <p>Vamos confirmar sua aula pelo WhatsApp em até 1 hora.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 9. UNIDADE -->
+    <section id="unidade" class="secao" aria-labelledby="titulo-unidade">
+      <div class="container unidade">
+        <div>
+          <h2 id="titulo-unidade">Onde estamos</h2>
+          <address class="unidade__info">
+            <p><strong>Endereço</strong><br>Rua das Palmeiras, 450 — Centro, São Paulo/SP</p>
+            <p><strong>Funcionamento</strong><br>Seg a sex: 5h às 23h · Sáb, dom e feriados: 7h às 18h</p>
+            <p><strong>Contato</strong><br>(11) 4000-0000 · contato@pulsofit.com.br</p>
+            <p><strong>Estacionamento</strong><br>Gratuito para alunos (40 vagas)</p>
+          </address>
+          <a href="#" class="btn btn--secundario">Como chegar</a>
+        </div>
+        <div class="placeholder placeholder--mapa" role="img" aria-label="Mapa com a localização da academia">
+          <span>Mapa (Google Maps incorporado)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ -->
+    <section id="duvidas" class="secao secao--cinza" aria-labelledby="titulo-duvidas">
+      <div class="container container--estreito">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-duvidas">Dúvidas frequentes</h2>
+        </header>
+
+        <div class="faq" data-nota="12">
+          <details>
+            <summary>Preciso de atestado médico para começar?</summary>
+            <p>Não é obrigatório, mas recomendamos. Na avaliação física inicial, o professor faz uma anamnese para identificar qualquer restrição.</p>
+          </details>
+          <details>
+            <summary>Posso cancelar o plano a qualquer momento?</summary>
+            <p>No plano Mensal, sim, sem multa. Nos planos com fidelidade, o cancelamento antecipado tem multa de 1 mensalidade.</p>
+          </details>
+          <details>
+            <summary>Nunca treinei. Vou conseguir acompanhar?</summary>
+            <p>Sim. Seu treino é montado a partir da avaliação física e um professor acompanha você nas primeiras semanas.</p>
+          </details>
+          <details>
+            <summary>Quais formas de pagamento vocês aceitam?</summary>
+            <p>Cartão de crédito (recorrente), Pix e débito automático.</p>
+          </details>
+          <details>
+            <summary>Tem armário e vestiário?</summary>
+            <p>Sim, vestiários masculino e feminino com chuveiros e armários com cadeado digital.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CTA FINAL -->
+    <section class="cta-final">
+      <div class="container cta-final__inner">
+        <h2>Seu primeiro treino é por nossa conta.</h2>
+        <a href="#experimental" class="btn btn--primario btn--grande" data-nota="2">Agendar aula experimental grátis</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. RODAPÉ -->
+  <footer class="rodape">
+    <div class="container rodape__inner">
+      <div>
+        <a href="#inicio" class="logo"><span class="logo__marca" aria-hidden="true">◆</span> PulsoFit</a>
+        <p>Academia de bairro, com acompanhamento de verdade.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <a href="#modalidades">Modalidades</a>
+        <a href="#planos">Planos</a>
+        <a href="#horarios">Horários</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <div class="rodape__social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+    <p class="rodape__copy">© 2026 PulsoFit Academia · CNPJ 00.000.000/0001-00 · <a href="#">Política de privacidade</a></p>
+  </footer>
+
+  <a href="#" class="whatsapp" aria-label="Falar com a academia no WhatsApp" data-nota="13">WhatsApp</a>
+
+  <!-- Legenda das anotações -->
+  <aside class="legenda" id="legenda" aria-label="Legenda das anotações de UX" hidden>
+    <h2>Anotações de UX</h2>
+    <ol>
+      <li><b>Cabeçalho fixo</b> — Lei de Jakob (padrão conhecido), visibilidade do status/navegação (Nielsen #1) e Condução (Bastien &amp; Scapin).</li>
+      <li><b>CTA principal</b> — Lei de Fitts (alvo grande, sempre visível), Efeito de posição serial (no início e no fim da página) e contraste máximo (Von Restorff).</li>
+      <li><b>Título orientado a benefício</b> — Correspondência com o mundo real (Nielsen #2) e Compatibilidade (B&amp;S).</li>
+      <li><b>Prova social</b> — Viés de prova social e de autoridade para reduzir a incerteza na decisão.</li>
+      <li><b>Benefícios em blocos</b> — Lei de Miller (chunking) e Gestalt (proximidade e similaridade).</li>
+      <li><b>Cards de modalidades</b> — Consistência e padrões (Nielsen #4) e Homogeneidade (B&amp;S).</li>
+      <li><b>Apenas 3 planos</b> — Lei de Hick (menos opções, decisão mais rápida) e tabela comparável lado a lado (reconhecer em vez de lembrar, Nielsen #6).</li>
+      <li><b>Plano em destaque</b> — Efeito de ancoragem/isca (decoy), Efeito Von Restorff e região comum (Gestalt).</li>
+      <li><b>Horários em abas</b> — Estética minimalista (Nielsen #8), Carga de trabalho (B&amp;S) e Controle explícito do usuário.</li>
+      <li><b>Passo a passo</b> — Efeito do gradiente de objetivo e Lei de Tesler (a complexidade fica com a academia, não com o usuário).</li>
+      <li><b>Formulário curto</b> — Prevenção de erros (Nielsen #5), mensagens de erro claras (Nielsen #9), Gestão de erros e Brevidade (B&amp;S).</li>
+      <li><b>FAQ em acordeão</b> — Ajuda e documentação (Nielsen #10) e quebra de objeções antes da conversão.</li>
+      <li><b>Botão flutuante de WhatsApp</b> — Flexibilidade e eficiência (Nielsen #7) e Adaptabilidade (B&amp;S).</li>
+    </ol>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
